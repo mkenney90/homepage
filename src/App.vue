@@ -31,7 +31,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+
+    body {
+        font-family: Monsterrat, sans-serif;
+    }
 
     .fade-leave-active,
     .fade-enter-active {

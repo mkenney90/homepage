@@ -1,7 +1,6 @@
-const pagesKey = "pages";
+import pagesJson from '../public/pages.json';
 
-let pagesJson = localStorage.getItem(pagesKey);
-let pagesStore = JSON.parse(pagesJson);
+let pagesStore = pagesJson;
 
 export default {
     getAllPages() {

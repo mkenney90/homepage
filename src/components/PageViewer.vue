@@ -1,6 +1,6 @@
 <template>
     <div v-if="activePage == 2" class="container">
-        <h1>{{ page.pageTitle }}</h1>
+        <h1 id="page-title">{{ page.pageTitle }}</h1>
         <div v-for="(job, index) in page.jobs" class="jobs-item" :key="index">
             <h3>{{ job.company }}</h3>
             <h3>{{ job.position }}</h3>
@@ -9,8 +9,8 @@
         </div>
     </div>
     <div v-else class="container">
-        <h1>{{ page.pageTitle }}</h1>
-        <p>{{ page.content }}</p>
+        <h1 id="page-title">{{ page.pageTitle }}</h1>
+        <p>{{ Array.isArray(page.content) ? page.content.join("") : page.content }}</p>
     </div>
 </template>
 
@@ -37,12 +37,16 @@ export default {
     h1 {
         margin-bottom: 1em;
     }
-
+    p {
+        font-size: 1.2em;
+    }
+    #page-title {
+        text-align: center;
+    }
     .container {
         padding: 2em;
         min-height: 60vh;
     }
-
     .jobs-item {
         margin: 1em 0;
         padding: .75em;
