@@ -1,20 +1,24 @@
 [
     {
+        "name": "home",
         "link": { "text": "Home", "url": "index.html" },
-        "pageTitle": "Hi! I'm Mike",
-        "content": "I am a results-driven professional developer with more than seven years of experience. I have worked in both front- and back-end environments and with a multitude of technologies and frameworks to deliver solutions. I am always striving to expand my toolkit and learn new skills, and I am eager to face challenges head-on."
+        "pageTitle": "Hi, I'm Mike",
+        "image": "portrait.jpg",
+        "content": "I am a results-oriented professional developer with more than seven years of experience. I have worked in both front- and back-end environments and with a multitude of technologies and frameworks to deliver solutions. I am always striving to expand my toolkit and learn new skills, and I am eager to face challenges head-on. I am a self-starter who is motivated to reach new goals and break new ground."
     },
     {
+        "name": "about",
         "link": { "text": "About Me", "url": "about.html" },
         "pageTitle": "About Me",
         "content": [
-                    "Originally from upstate NY, I relocated to Greenville, SC after my military service where I've lived ",
-                    "for over 10 years now. I love the ample opportunities for outdoor recreation and proximity to the beach, ",
+                    "Originally from upstate NY, I relocated to Greenville, SC after my military service and I've lived ",
+                    "here for over 10 years now. I love the ample opportunities for outdoor recreation and proximity to the beach, ",
                     "as well as the plethora of breweries in the area. In my free time, I enjoy running, longboarding, and 3D ",
                     "printing."
         ]
     },
     {
+        "name": "experience",
         "link": { "text": "Experience", "url": "experience.html" },
         "pageTitle": "Professional Experience",
         "jobs": [

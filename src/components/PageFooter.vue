@@ -4,7 +4,7 @@
         <p class="col-md-4 mb-0 text-muted">© 2023 Mike Kenney</p>
         <ul class="nav col-md-4 justify-content-end">
             <div v-for="(contact, name, index) in contactInfo" :key="index">
-                <li v-if="name=='email'"><a v-bind:href="'mailto:' + contact + '?subject=Saw your portfolio and wanted to get in touch!'">mike@kenneymedia</a> <span v-if="index < 2">|</span></li>
+                <li v-if="name=='email'"><a :href="'mailto:' + contact + '?subject=Saw your portfolio and wanted to get in touch!'">mike@kenneymedia</a> <span v-if="index < 2">|</span></li>
                 <li v-else>{{ contact }} <span v-if="index < 2">|</span></li>
             </div>
         </ul>

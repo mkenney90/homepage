@@ -5,6 +5,11 @@ const router = createRouter({
     history: createWebHashHistory(),
     routes: [
         {
+            path: "/",
+            component: PageViewer,
+            redirect: "/0"
+        },
+        {
             path: "/:index?",
             component: PageViewer,
             props: true,

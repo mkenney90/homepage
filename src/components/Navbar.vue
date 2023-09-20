@@ -2,18 +2,13 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand">KenneyMedia</a>
-            </div>
+            <a class="navbar-brand">KenneyMedia</a>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li v-for="(page, index) in pages" class="nav-item" :key="index">
-                    <router-link 
-                        :to="`/${index}`"
-                        class="nav-link" 
-                        :class="{active: activePage === index}"
-                        aria-current="page"
-                        @click.prevent="navLinkClick(index)"
-                    >{{ page.link.text }}</router-link>
+                    <navbar-link
+                        :page="page"
+                        :index="index"
+                    ></navbar-link>
                 </li>
             </ul>
         </div>
@@ -21,31 +16,37 @@
 </template>
 
 <script>
+import NavbarLink from './NavbarLink.vue';
 
 export default {
-    props: ['activePage', 'navLinkClick'],
+    components: {
+        NavbarLink
+    },
     created() {
         this.pages = this.$pages.getAllPages();
+        this.pages.forEach((page) => {
+            this.links.push(page.name);
+        })
     },
     data() {
         return {
-            pages: []
+            pages: [],
+            links: []
         }
     }
 }
 </script>
 
-<style scoped>
+<style>
 nav.navbar {
     box-shadow: 1px 1px rgb(150, 100, 200);
     padding: 0;
 }
-
 nav.navbar ul {
     vertical-align: middle;
     line-height: 3em;
 }
-
-a.active {
+.active {
     background-color: rgba(150, 100, 200, 0.75)
-}</style>
+}
+</style>

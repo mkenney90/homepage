@@ -1,12 +1,12 @@
 <template>
-    <navbar :active-page="activePage" :nav-link-click="(index) => activePage = index"></navbar>
+    <navbar></navbar>
 
-    <router-view :active-page="activePage" v-slot="{  Component }" :key="$route.fullPath">
+    <router-view v-slot="{ Component }" :key="$route.fullPath">
         <transition name="fade" appear>
             <component :is="Component" />
         </transition>
     </router-view>
-    <page-footer :contactInfo="contactInfo"></page-footer>
+    <page-footer :contact-info="contactInfo"></page-footer>
 </template>
 
 <script>
@@ -20,7 +20,6 @@ export default {
     },
     data() {
         return {
-            activePage: 2,
             contactInfo: {
                 location: "Greenville, SC",
                 email: "mike@kenneymedia.com",
