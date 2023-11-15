@@ -39,14 +39,16 @@ export default {
 
 <style>
 nav.navbar {
-    box-shadow: 1px 1px rgb(150, 100, 200);
+    box-shadow: 2px 2px rgb(150, 100, 200);
     padding: 0;
+    font-family: 'Martian Mono', monospace;
 }
 nav.navbar ul {
     vertical-align: middle;
     line-height: 3em;
 }
-.active {
-    background-color: rgba(150, 100, 200, 0.75)
+.navbar a.active {
+    background-color: rgba(150, 100, 200, 0.75);
+    color: rgb(10,10,10);
 }
 </style>

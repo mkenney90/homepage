@@ -1,6 +1,6 @@
 <template>
     <router-link
-        :to="`/${index}`"
+        :to="`/${page.link.url}`"
         class="nav-link" 
         active-class="active"
         aria-current="page"

@@ -20,9 +20,11 @@ export default {
         return pagesStore;
     },
 
-    getPage(index) {
-        return pagesStore[index]
-            ? pagesStore[index]
-            : "No data found for " + index;
+    getPage(pageName) {
+        let pageIndex = pagesStore.findIndex(p => p.name === pageName);
+
+        return pagesStore[pageIndex]
+            ? pagesStore[pageIndex]
+            : "No data found for " + pageIndex;
     },
 };
