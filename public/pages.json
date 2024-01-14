@@ -2,7 +2,7 @@
     {
         "name": "home",
         "link": { "text": "Home", "url": "home" },
-        "pageTitle": "Hi, I'm Mike",
+        "pageTitle": "Hi, I'm Mike!",
         "image": "portrait.jpg",
         "content": "and I am a results-oriented professional developer with more than seven years of experience. I have worked in both front- and back-end environments and with a multitude of technologies and frameworks to deliver solutions. I am always striving to expand my toolkit and learn new skills, and I am eager to face challenges head-on. I am a self-starter who is motivated to reach new goals and break new ground."
     },
