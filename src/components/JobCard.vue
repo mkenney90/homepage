@@ -31,7 +31,6 @@ export default {
         box-shadow: 3px 3px rgb(150, 100, 200) !important;
     }
     .jobs-item h3 {
-        display: inline-block;
         margin: 0.5em;
     }
     .jobs-item em {
@@ -39,14 +38,13 @@ export default {
         font-size: 1.2em;
     }
     .job-tenure-container {
-        position: absolute;
+        position: relative;
         padding: 1em;
         top: 0;
-        bottom: 0;
         right: 0;
         background-color: rgba(150, 100, 200, .9);
     }
-    .jobs-item p {
+    #experience .jobs-item p {
         margin: 0.7em 0.9em;
     }
     .jobs-item h3:nth-child(even) {
@@ -55,7 +53,14 @@ export default {
     hr {
         border: 0;
         border-bottom: 2px solid rgba(150, 100, 200, .9);
-        width: 95%;
-        margin: 0 0 0 5%;
+        width: 100%;
+        margin: 0;
+    }
+
+    @media (min-width: 767.98px) {
+        .job-tenure-container {
+            position: absolute;
+            top: -1em;
+        }
     }
 </style>

@@ -3,6 +3,7 @@
         "name": "home",
         "link": { "text": "Home", "url": "home" },
         "pageTitle": "Hi, I'm Mike",
+        "component": "HomeView",
         "image": "portrait.jpg",
         "content": "and I am a results-oriented professional developer with more than seven years of experience. I have worked in both front- and back-end environments and with a multitude of technologies and frameworks to deliver solutions. I am always striving to expand my toolkit and learn new skills, and I am eager to face challenges head-on. I am a self-starter who is motivated to reach new goals and break new ground."
     },
@@ -10,6 +11,7 @@
         "name": "about",
         "link": { "text": "About Me", "url": "about" },
         "pageTitle": "About Me",
+        "component": "AboutView",
         "content": [
                     "Originally from upstate NY, I relocated to Greenville, SC after my military service and I've lived ",
                     "here for more than 10 years now. I love the ample opportunities for outdoor recreation and proximity to the beach, ",
@@ -21,6 +23,7 @@
         "name": "experience",
         "link": { "text": "Experience", "url": "experience" },
         "pageTitle": "Professional Experience",
+        "component": "ExperienceView",
         "jobs": [
             {
                 "company": "Bank of America",

@@ -1,14 +1,14 @@
 <template>
     <div class="container">
-        <h1 id="page-title">{{ page.pageTitle }}</h1>
-        <p>{{ Array.isArray(page.content) ? page.content.join("") : page.content }}</p>
+        <h1 id="page-title">{{ pageData.pageTitle }}</h1>
+        <p>{{ Array.isArray(pageData.content) ? pageData.content.join("") : pageData.content }}</p>
     </div>
 </template>
 
 <script>
 
 export default {
-    props: ['pageName'],
+    props: ['pageData'],
     created() {
         this.page = this.$pages.getPage(this.pageName)
     },

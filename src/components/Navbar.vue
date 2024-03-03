@@ -1,16 +1,27 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand">KenneyMedia</a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li v-for="(page, index) in pages" class="nav-item" :key="index">
-                    <navbar-link
-                        :page="page"
-                        :index="index"
-                    ></navbar-link>
-                </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mkNavbar" aria-controls="mkNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="mkNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MK</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li v-for="(page, index) in pages" class="nav-item" :key="index">
+                            <navbar-link
+                                :page="page"
+                                :index="index"
+                            ></navbar-link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </nav>
 </template>

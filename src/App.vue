@@ -2,23 +2,21 @@
     <loading-screen></loading-screen>
 
     <navbar></navbar>
+    <main-view></main-view>
 
-    <router-view v-slot="{ Component }" :key="$route.fullPath">
-        <transition name="slide-fade" appear>
-            <component :is="Component" />
-        </transition>
-    </router-view>
     <page-footer :contact-info="contactInfo"></page-footer>
 </template>
 
 <script>
 import LoadingScreen from './components/LoadingScreen.vue';
+import MainView from './components/MainView.vue';
 import Navbar from './components/Navbar.vue';
 import PageFooter from './components/PageFooter.vue';
 
 export default {
     components: {
         LoadingScreen,
+        MainView,
         Navbar,
         PageFooter
     },
@@ -32,9 +30,14 @@ export default {
         };
     },
 }
+
 </script>
 
 <style>
+
+    body {
+        position: relative;
+    }
 
     @keyframes loading-anim {
         0% {
@@ -154,18 +157,41 @@ export default {
         text-align: center;
     }
     .container {
-        padding: 2em;
+        padding: 0;
         min-height: 80vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    img {
-        text-align: center;
-        margin: 2.25em auto;
-        max-width: 25%;
-        box-shadow: 3px 3px rgb(150, 100, 200);
-        overflow: hidden;
-        display: block;
+    .container p {
+        max-width: 95%;
+        margin: 0 auto;
     }
+
+    .img-fluid {
+        max-width: 35%;
+    }
+
+    img {
+        margin-top: 6.25em;
+        margin-bottom: 2.25em;
+        box-shadow: 3px 3px rgb(150, 100, 200);
+    }
+
+    @media (max-width: 768px) {
+        .img-fluid {
+            max-width: 55%;
+        }
+        p {
+            font-size: 1.2em;
+        }
+    }
+
+    @media (max-width: 530px) {
+        .img-fluid {
+            max-width: 100%;
+            margin-top: 2.6em;
+        }
+    }
+    
 </style>
