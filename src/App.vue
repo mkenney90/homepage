@@ -25,7 +25,7 @@ export default {
             contactInfo: {
                 location: "Greenville, SC",
                 email: "mike@kenneymedia.com",
-                phone: "(760) 819-3606",
+                linkedin: "https://www.linkedin.com/in/mikeskenney/"
             },
         };
     },
@@ -37,6 +37,9 @@ export default {
 
     body {
         position: relative;
+    }
+    #app {
+        padding-top: 4.1em;
     }
 
     @keyframes loading-anim {
@@ -148,17 +151,19 @@ export default {
     }
 
     h1 {
+        margin-top: 1em;
         margin-bottom: 1em;
     }
     p {
         font-size: 1.4em;
     }
-    #page-title {
+    .page-title {
         text-align: center;
+        padding-top: 2em;
     }
     .container {
         padding: 0;
-        min-height: 80vh;
+        margin-top: -2em;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -173,8 +178,8 @@ export default {
     }
 
     img {
-        margin-top: 6.25em;
-        margin-bottom: 2.25em;
+        margin-top: 2.25em;
+        margin-bottom: -1em;
         box-shadow: 3px 3px rgb(150, 100, 200);
     }
 
@@ -191,6 +196,9 @@ export default {
         .img-fluid {
             max-width: 100%;
             margin-top: 2.6em;
+        }
+        #app {
+            padding-top: 0;
         }
     }
     

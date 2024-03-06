@@ -13,7 +13,7 @@
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li v-for="(page, index) in pages" class="nav-item" :key="index">
+                        <li v-for="(page, index) in pages" class="nav-item" :key="index" data-bs-dismiss="offcanvas">
                             <navbar-link
                                 :page="page"
                                 :index="index"
@@ -38,6 +38,13 @@ export default {
         this.pages.forEach((page) => {
             this.links.push(page.name);
         })
+    },
+    methods: {
+        hideThisCanvas() {
+            let myOffcanvas = this.$refs.offCanvas;
+            console.log(myOffcanvas)
+            myOffcanvas.isVisible = false;
+      }
     },
     data() {
         return {

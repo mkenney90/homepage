@@ -19,9 +19,10 @@ export default {
 <style>
     .job-header {
         position: relative;
+        padding: 0.25em 0;
     }
     .jobs-item {
-        margin: 1em 0;
+        margin: 2em 0;
         background-color: rgba(255,255,255,0.04);
         font-size: .9em;
         transition: all;
@@ -60,7 +61,6 @@ export default {
     @media (min-width: 767.98px) {
         .job-tenure-container {
             position: absolute;
-            top: -1em;
         }
     }
 </style>

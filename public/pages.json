@@ -4,7 +4,7 @@
         "link": { "text": "Home", "url": "home" },
         "pageTitle": "Hi, I'm Mike",
         "component": "HomeView",
-        "image": "portrait.jpg",
+        "image": "portrait_3.jpg",
         "content": "and I am a results-oriented professional developer with more than seven years of experience. I have worked in both front- and back-end environments and with a multitude of technologies and frameworks to deliver solutions. I am always striving to expand my toolkit and learn new skills, and I am eager to face challenges head-on. I am a self-starter who is motivated to reach new goals and break new ground."
     },
     {
@@ -17,6 +17,54 @@
                     "here for more than 10 years now. I love the ample opportunities for outdoor recreation and proximity to the beach, ",
                     "as well as the multitude of breweries and interesting restaurants in the area. In my free time, I enjoy exploring, hiking, longboarding, and 3D ",
                     "printing."
+        ]
+    },
+    {
+        "name": "skills",
+        "link": { "text": "Skills", "url": "skills" },
+        "pageTitle": "Skills",
+        "component": "SkillsView",
+        "skills": [
+            {
+                "name": "Vue",
+                "img": "logo.png"
+            },
+            {
+                "name": "React",
+                "img": "React-icon.png"
+            },
+            {
+                "name": "JavaScript",
+                "img": "javascript-icon.png"
+            },
+            {
+                "name": "PHP",
+                "img": "php-icon.png"
+            },
+            {
+                "name": "SQL",
+                "img": "sql-icon.png"
+            },
+            {
+                "name": "TypeScript",
+                "img": "ts-icon.png"
+            },
+            {
+                "name": "Git",
+                "img": "git-icon.png"
+            },
+            {
+                "name": "Node",
+                "img": "node-icon.png"
+            },
+            {
+                "name": "WordPress",
+                "img": "wordpress-icon.png"
+            },
+            {
+                "name": "Python",
+                "img": "python-icon.png"
+            }
         ]
     },
     {

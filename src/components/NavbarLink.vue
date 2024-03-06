@@ -1,6 +1,6 @@
 <template>
     <a
-        :href="`#${page.link.url}`"
+        :href="page.name=='home' ? '#top' : `#${page.link.url}`"
         class="nav-link" 
         aria-current="page"
     >{{ page.link.text }}

@@ -1,18 +1,19 @@
 <template>
-    <div class="container" :id="pageData.name">
-        <h1 id="page-title">{{ pageData.pageTitle }}</h1>
-        <div v-for="(job, index) in pageData.jobs" class="jobs-item" :key="index">
-            <JobCard :job=job />
+    <section :id="pageData.name">
+        <div class="row">
+            <div v-for="(skill, index) in pageData.skills" class="skill-container col-6 col-lg-3" :key="index">
+                <SkillCard :skill=skill />
+            </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
-import JobCard from './JobCard.vue';
+import SkillCard from './SkillCard.vue';
 
 export default {
     components: {
-        JobCard
+        SkillCard
     },
     props: ['pageData'],
     created() {

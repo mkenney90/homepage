@@ -1,10 +1,9 @@
 <template>
-    <div class="container" :id="pageData.name">
-        <h1 id="page-title">{{ pageData.pageTitle }}</h1>
+    <section :id="pageData.name">
         <div v-for="(job, index) in pageData.jobs" class="jobs-item" :key="index">
             <JobCard :job=job />
         </div>
-    </div>
+    </section>
 </template>
 
 <script>

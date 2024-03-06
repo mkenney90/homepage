@@ -4,7 +4,8 @@
         <p class="my-auto mx-auto text-muted">©2024 Mike Kenney</p>
         <ul class="nav mx-auto">
             <template v-for="(contact, name, index) in contactInfo" :key="index">
-                <li v-if="name=='email'"><a :href="'mailto:' + contact + '?subject=Saw your portfolio and wanted to get in touch!'">mike@kenneymedia</a><span v-html="separator(index)"></span></li>
+                <li v-if="name=='email'"><a :href="'mailto:' + contact + '?subject=Saw your portfolio and wanted to get in touch!'"><i class="bi bi-envelope-at-fill"></i></a><span v-html="separator(index)"></span></li>
+                <li v-else-if="name=='linkedin'"><a :href=contact><i class="bi bi-linkedin"></i></a></li>
                 <li v-else>{{ contact }}<span v-html="separator(index)"></span></li>
             </template>
         </ul>
@@ -16,7 +17,7 @@ export default {
     props: ['contactInfo'],
     methods: {
         separator(index) {
-            return (index < 2) ? `<span id="span-separator">|</span>` : ``;
+            return (index < Object.keys(this.contactInfo).length-1) ? `<span id="span-separator">|</span>` : ``;
         }
     }
 }
@@ -37,6 +38,11 @@ li {
     display: block;
     width: 100%;
     text-align: center;
+}
+
+i.bi {
+    font-size: 1.5em;
+    line-height: 0;
 }
 
 #span-separator {

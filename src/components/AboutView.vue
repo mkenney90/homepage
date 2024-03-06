@@ -1,8 +1,7 @@
 <template>
-    <div class="container">
-        <h1 id="page-title">{{ pageData.pageTitle }}</h1>
+    <section :id="pageData.name">
         <p>{{ Array.isArray(pageData.content) ? pageData.content.join("") : pageData.content }}</p>
-    </div>
+    </section>
 </template>
 
 <script>

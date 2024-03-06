@@ -8,7 +8,7 @@ const router = createRouter({
         {
             path: "/",
             component: MainView,
-            props: { pageName: "home" },
+            props: { pageName: "" },
         },
     ],
 });

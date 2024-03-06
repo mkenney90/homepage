@@ -1,9 +1,7 @@
 <template>
-    <div class="container">
-        <img class="img-fluid mx-auto" src="../assets/portrait_3.jpg"/>
-        <h1 id="page-title">{{ pageData.pageTitle }}</h1>
+    <section :id="pageData.name">
         <p>{{ Array.isArray(pageData.content) ? pageData.content.join("") : pageData.content }}</p>
-    </div>
+    </section>
 </template>
 
 <script>
