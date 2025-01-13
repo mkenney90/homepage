@@ -37,6 +37,10 @@ export default {
 
     body {
         position: relative;
+        font-family: 'Martian Mono', monospace;
+    }
+    a {
+        color: #7997B8;
     }
     #app {
         padding-top: 4.1em;
@@ -77,10 +81,6 @@ export default {
         margin: 0 auto;
         text-align: center;
         line-height: 100vh;
-    }
-
-    body {
-        font-family: 'Martian Mono', monospace;
     }
 
     .fade-leave-active,
@@ -164,9 +164,13 @@ export default {
     .container {
         padding: 0;
         margin-top: -2em;
+        margin-bottom: 10em;
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .container:first-child {
+        margin-top: 4em;
     }
     .container p {
         max-width: 95%;
@@ -185,7 +189,7 @@ export default {
 
     @media (max-width: 768px) {
         .img-fluid {
-            max-width: 55%;
+            max-width: 65%;
         }
         p {
             font-size: 1.2em;
@@ -199,6 +203,12 @@ export default {
         }
         #app {
             padding-top: 0;
+        }
+        .container {
+            margin-bottom: unset;
+        }
+        .container:first-child {
+            margin-top: unset;
         }
     }
     

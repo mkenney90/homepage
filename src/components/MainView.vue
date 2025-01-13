@@ -1,8 +1,10 @@
 <template>
-    <div v-for="(page, index) in pages" :key="index" class="container">
-        <img v-if="page.image" class="img-fluid mx-auto" :src='require("../assets/" + page.image)' />
-        <h1 :id="page.name" class="page-title">{{ page.pageTitle }}</h1>
-        <component :is="page.component" :page-data="page"/>
+    <div style="position:relative">
+        <div v-for="(page, index) in pages" :key="index" class="container">
+            <img v-if="page.image" class="img-fluid mx-auto" :src='require("../assets/" + page.image)' />
+            <h1 :id="page.name" class="page-title">{{ page.pageTitle }}</h1>
+            <component :is="page.component" :page-data="page"/>
+        </div>
     </div>
 </template>
 

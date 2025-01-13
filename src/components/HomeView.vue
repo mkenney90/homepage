@@ -1,5 +1,5 @@
 <template>
-    <section :id="pageData.name">
+    <section :id="'section-'+pageData.name">
         <p>{{ Array.isArray(pageData.content) ? pageData.content.join("") : pageData.content }}</p>
     </section>
 </template>

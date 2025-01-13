@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+    <nav id="topnav" class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand">KenneyMedia</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mkNavbar" aria-controls="mkNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@ export default {
             let myOffcanvas = this.$refs.offCanvas;
             console.log(myOffcanvas)
             myOffcanvas.isVisible = false;
-      }
+        }
     },
     data() {
         return {

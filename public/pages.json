@@ -74,13 +74,24 @@
         "component": "ExperienceView",
         "jobs": [
             {
+                "company": "9Round Franchising, LLC",
+                "position": "Software Developer",
+                "tenure": "2024-Present",
+                "content": [
+                    "Managed digital asset overhaul for franchisee websites to improve user engagement and brand consistency",
+                    "Executed comprehensive website redesign for both corporate office and franchise owners to enhance user experience and visual appeal",
+                    "Spearheaded efforts to improve 9Round’s SEO rankings and visibility using Semrush tools to conduct analysis",
+                    "Developed and implemented spam deterrence mechanisms in website forms to decrease fraudulent submissions and bad leads"
+                ]
+            },
+            {
                 "company": "Bank of America",
                 "position": "Application Developer",
                 "tenure": "2022-2023",
                 "content": [
                     "Constructed reactive single-page applications (SPAs) for small business workflow using Vue.js",
                     "Participated in design and development of web pages using modern standards for HTML, CSS, and Javascript",
-                    "Implemented modular templating for SPAs with Handlebars.js and JSON, enhancing app scalability.",
+                    "Implemented modular templating for SPAs with Handlebars.js and JSON, enhancing app scalability",
                     "Developed responsive UI for SPAs using Bootstrap and Flexbox."
                 ]
             },
@@ -89,8 +100,10 @@
                 "position": "Sr. Software Developer",
                 "tenure": "2015-2022",
                 "content": [
-                    "Developed multiple employee-facing internal web apps using PHP, SQL, and JavaScript to facilitate and expedite business processes to handle orders and store sensitive customer data. Personally interacted with end users to ensure needs were met",
-                    "Designed interactive application for touchscreen display to showcase new products at trade shows from 2016-2019. Collaborated with marketing team to deliver optimal customer interface and experience."
+                    "Collaborated with developers and testers to deploy eCommerce apps built with React and TypeScript",
+                    "Designed and developed web applications using Java, PHP, PostgreSQL, and JavaScript to end user specifications to streamline business processes.",
+                    "Designed interactive application for touchscreen display to showcase new products at trade shows.",
+                    "Translated annotated mockups and wireframes into fully functional web applications with a mobile-first approach via ReactJS"
                 ]
             }
         ]

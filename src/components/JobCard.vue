@@ -23,6 +23,7 @@ export default {
     }
     .jobs-item {
         margin: 2em 0;
+        padding-bottom: 0.5em;
         background-color: rgba(255,255,255,0.04);
         font-size: .9em;
         transition: all;
@@ -45,8 +46,8 @@ export default {
         right: 0;
         background-color: rgba(150, 100, 200, .9);
     }
-    #experience .jobs-item p {
-        margin: 0.7em 0.9em;
+    #section-experience .jobs-item p {
+        margin: 1.5em 0.9em;
     }
     .jobs-item h3:nth-child(even) {
         color: darkgray;

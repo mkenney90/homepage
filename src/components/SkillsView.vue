@@ -1,5 +1,5 @@
 <template>
-    <section :id="pageData.name">
+    <section :id="'section-'+pageData.name">
         <div class="row">
             <div v-for="(skill, index) in pageData.skills" class="skill-container col-6 col-lg-3" :key="index">
                 <SkillCard :skill=skill />
