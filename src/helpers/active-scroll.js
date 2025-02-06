@@ -20,6 +20,5 @@ export const activeSection = function() {
                 li.classList.add("active");
             }
         });
-        console.log(current)
     }
 }
